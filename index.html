@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Calculadora de IMC</title>
 </head>
 <body>
-    
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            background-color: #d62828;
+            color: white;
 
+        }
+    </style>
     
+   <form method="GET">
+       <span>Digite seu Nome:</span>
+       <input type="text" name="nome" placeholder="Seu nome" required>
+       <br/>
+
+       <span>Digite sua Altura em CM:</span>
+       <input type="text" name="altura" placeholder="Sua Altura" required>
+       <br/>
+
+       <span>Digite seu peso em GRAMAS:</span>
+       <input type="text" name="peso" placeholder="Seu peso" required>
+       <br/>
+       <input type="submit" name="enviar" value="Enviar">
+   </form>
+
+   <footer class="footer">
+       <h5>For learning purposes! 🤓</h5>
+   </div>
+
 </body>
 </html>
