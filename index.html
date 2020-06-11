@@ -16,6 +16,15 @@
             color: white;
 
         }
+
+        .footer, a, h5 {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
     </style>
     
    <form method="GET">
@@ -33,7 +42,20 @@
        <input type="submit" name="enviar" value="Enviar">
    </form>
 
-   <footer class="footer">
+   <?php
+    if (isset($_GET["enviar"])){
+        $nome=$_GET["nome"];
+        $altura=$_GET["altura"]/100;
+        $peso=$_GET["peso"]/1000;
+ 
+        $imc=$peso/($altura*$altura);
+ 
+        echo "<br/><h2> Olá ".$nome."</h2><p>O seu IMC é:".$imc."</p>";
+    }
+ 
+?>
+
+   <div class="footer">
        <h5>For learning purposes! 🤓</h5>
    </div>
 
